@@ -1,0 +1,443 @@
+/* Fuente de Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@500;600&family=Libre+Baskerville:wght@700&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos aplicados en toda la página */
+
+html{
+  font-family:'Trebuchet MS', sans-serif, sans-serif;
+  background-color:#3C4861;  
+}
+
+h2{
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding-bottom: 50px; 
+  color: #EFD256;
+}
+
+h3{
+  font-size: 1.8rem;
+  padding-bottom: 40px; 
+  color: #3C4861;
+}
+
+p{
+  font-size: 1.3rem;
+  margin: 10px 0;
+  line-height: 1.6em;
+  color: #fff;
+}
+
+
+
+/* Estilos aplicados a cada sección de la página */
+
+
+header{
+  color: #fff;
+  background-color: #3C4861;
+}
+
+nav{
+ display: flex;
+ justify-content: space-between;
+ margin-bottom: 1rem;
+ font-size: 20px;
+}
+
+
+button{
+  color: #fff;
+  border: 1px solid #f1f162;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 150px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  background-size: 300%;
+  background-image: linear-gradient(to left, #ffff50, #48c970, #ffff50);
+  
+}
+
+button:hover{
+  background-position: right;
+}
+
+.banner{
+  width: 100%;
+  height: 600px;
+  background-size: 100% 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+  .banner{
+    background-image: url(../imag/Sistema.jpg) ;
+  }
+ 
+  .banner-titulo{
+  font-size: 35px;
+  color: #3C4861;
+  text-align: right;
+  margin-left: 55%;
+  margin-bottom: 28%;
+  margin-right: 2%;
+
+  }
+ .banner-subtitulo{
+  color: #353b48;
+  text-align: center;
+  margin-top: 0%;
+ }
+
+  .secciones{
+    color: #EFD256;
+  }
+
+
+main{
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+/* Estilos a apartado sobre mi*/ 
+
+.sobremi {
+  display:flex;
+  grid-template-columns: repeat(10, 1fr);
+  width: 100vw;
+  align-items: center;
+  margin-left: 2rem;
+}
+
+.sobremi img{
+  width: 400px;
+  margin-top: 2rem; 
+  border-radius: 50%;
+ }
+
+.presentacion-info{
+  padding: 3em;
+  padding-right: 10%;
+}
+
+.presentacion-info h2{
+  font-size: 200%;
+  margin-bottom: 0%;
+  margin-top: 5%;
+  padding-bottom: 30px ;
+  text-transform: none;
+
+}
+.fullstack{
+  color: #EFD256;
+  margin-top: 0%;
+}
+
+.divider{
+height: 4px;
+width: 100px;
+background-color:#fff; 
+margin-top: 10px;
+margin-bottom: 2em;
+}
+
+.sobremi p{
+  margin-bottom: 1em;
+}
+
+/* Estilos a sección de experiencia laboral*/ 
+
+.container-experiencia{
+  height: 60px;
+  margin-top: 5%;
+}
+
+ .card-container{
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(to right,#5091EF 50%, #009ce9 75%, #0085e0 100%);
+  border-radius: 100px;
+  display: flex;
+  margin: auto;
+  margin-top: 20px;
+ }
+
+ .imag-container{
+  width: 30%;
+
+ }
+
+ .imag-container img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 0 0 10px;
+ }
+
+ .text-container{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  margin: 2% 2% 2% 2%;
+ }
+
+ .text-container h3{
+  text-align:center ;
+  margin-top: 5% ;
+  margin-bottom: 0%;
+ }
+
+ /* Estilos a sección formación académica*/ 
+
+ .formacion-academica{
+  height: 60px;
+  margin-top: 5%;
+ }
+
+.formacion{
+  width: 100%;
+  padding: 20px;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.titulo-grado{
+  margin-left: 40px;
+  background-color: #0085e0;
+}
+
+.summary-titulo{
+  background-image: linear-gradient(to right,#5091EF 50%, #009ce9 75%, #0085e0 100%);
+  padding: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 25px;
+  border-radius: 1rem;
+  color: #3C4861;
+
+
+}
+
+.certificaciones-descripcion{
+  background-color: #0085e0;
+  margin-left: 30px;
+  margin-top: 2%;
+}
+
+summary, li{
+  font-size: 23px;
+  line-height: 1.8em;
+  color: #fff;
+  margin-left: 30px;
+}
+
+
+
+/* Estilos a sección skills*/ 
+
+.skills{
+  height: 60px;
+  margin-top: 5%;
+ }
+
+.container-skills{
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+
+}
+
+.card{
+  border-radius: 1rem;
+  box-shadow: 0rem 1rem 1rem 1rem rgba( 0, 0, 0, 0.2);
+  display: flex;
+  overflow: hidden;
+  margin: 1.5rem;
+  width: 524px;
+  height: 530px;
+  background-color: #5091EF;
+}
+
+.card-description h3{
+  text-align: center;
+  margin-top: 10%;
+}
+
+ .card-description li{
+  list-style: none;
+  margin-left: 10%;
+  padding: 10px;
+
+ }
+
+ .bar {
+  background: #353b48;
+  display:block;
+  height: 20px;
+  width: 400px;
+  border: 1px solid rgba( 0, 0, 0,0.3);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+ }
+
+.bar span{
+  height: 20px;
+  float: left;
+  background: linear-gradient(135deg, rgba(236,0,140,1)0%, rgba(252, 103, 103, 1)100%);
+}
+ 
+.educacion {
+  width: 90%;
+  animation: html 3s;
+}
+.programacion{
+  width: 30%;
+  animation: scc 3s;
+}
+
+.psicologia{
+  width: 60%;
+  animation: java 3s;
+}
+
+.cognicion{
+  width: 80%;
+  animation: php 3s;
+}
+
+.relaciones {
+  width: 80%;
+  animation: html 3s;
+}
+.aprendizaje{
+  width: 95%;
+  animation: scc 3s;
+}
+
+.pcreativo{
+  width: 85%;
+  animation: java 3s;
+}
+.panalitico{
+  width: 75%;
+  animation: php 3s;
+}
+
+@media(max-width: 1030px){
+  .container-skills{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+}
+
+
+/* Estilos a sección proyectos*/ 
+
+.proyectos{
+  height: 60px;
+  margin-top: 5%;
+
+}
+
+.proyectos, .card-container{
+  margin-bottom: 3%;
+}
+
+/* Estilos a sección footer*/ 
+.footer {
+  background:white;
+  width: 100%;
+  height: 266px ;
+}
+
+.cita{
+  padding-bottom: 40px; 
+  color: #353b48;
+  text-align: center;
+  margin-top: 4%;
+  font-size:150%;
+}
+
+.new_footer_top {
+  width: 100%;
+  height: 266px;
+  position: relative;
+    overflow-x: hidden;
+}
+
+
+.btn_get_two:hover {
+  background: transparent;
+  color: #5091EF;
+}
+
+
+
+.new_footer_top .footer_bg {
+  position: absolute;
+  bottom: 0;
+  background: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigB8iI5tb8WSVBuVUGc9UjjB8O0708X7Fdic_4O1LT4CmLHoiwhanLXiRhe82yw0R7LgACQ2IhZaTY0hhmGi0gYp_Ynb49CVzfmXtYHUVKgXXpWvJ_oYT8cB4vzsnJLe3iCwuzj-w6PeYq_JaHmy_CoGoa6nw0FBo-2xLdOPvsLTh_fmYH2xhkaZ-OGQ/s16000/footer_bg.png") no-repeat scroll center 0;
+  width: 100%;
+  height: 266px;
+}
+
+
+
+.new_footer_top .footer_bg .footer_bg_two {
+  background: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhyLGwEUVwPK6Vi8xXMymsc-ZXVwLWyXhogZxbcXQYSY55REw_0D4VTQnsVzCrL7nsyjd0P7RVOI5NKJbQ75koZIalD8mqbMquP20fL3DxsWngKkOLOzoOf9sMuxlbyfkIBTsDw5WFUj-YJiI50yzgVjF8cZPHhEjkOP_PRTQXDHEq8AyWpBiJdN9SfQA/s16000/cyclist.gif") no-repeat center center;
+  width: 88px;
+  height: 100px;
+  background-size:100%;
+  bottom: 0;
+  left: 38%;
+  position: absolute;
+  -webkit-animation: myfirst 30s linear infinite;
+  animation: myfirst 30s linear infinite;
+}
+
+
+
+@-moz-keyframes myfirst {
+0% {
+  left: -25%;
+}
+100% {
+  left: 100%;
+}
+}
+
+@-webkit-keyframes myfirst {
+0% {
+  left: -25%;
+}
+100% {
+  left: 100%;
+}
+}
+
+@keyframes myfirst {
+0% {
+  left: -25%;
+}
+100% {
+  left: 100%;
+}
+}
